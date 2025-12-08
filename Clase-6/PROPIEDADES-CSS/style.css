@@ -1,0 +1,71 @@
+/* Cargamos un css externo */
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+NZ+Guides&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');@import url('https://fonts.googleapis.com/css2?family=Playwrite+NZ+Guides&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Normalizacion simple */
+*{
+    /* Todos mis textos tendran la fuente poppins */
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Clase utilitaria */
+.title ff{
+    font-family: "Playwrite NZ Guides", cursive;
+}
+
+.titulo {
+    font-family: "Playwrite NZ Guides", cursive;
+}
+
+/* Propiedades de texto */
+
+.parrafo{
+    font-size: 24 px; /* Tamaño */
+    color: blue; /* Color */
+    text-align: start; /* Alineacion de texto */
+    word-spacing: 16px;
+    letter-spacing: 8px;
+    /* 
+    Nos permite decorar
+    */
+/*     text-decoration: underline daotted red; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+.negrita{
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+
+
+/* Box modeling 
+Son aquellas propiedad que te permiten manejar como se va a ver la caja con el texto de nuestra pagina*/
+.caja{
+    width: 180px;
+    height: 180px;
+    background-color: black;
+
+
+    /* border-radius: 50% ;*/
+    /* border-radius: 10px; */
+    /*
+    padding: 10px; A todos los lados
+    padding: 10px 20; Vertical, Horizontal
+    padding: 10px 20px 30px; Top, Horizontal, Bottom
+    padding: 10px 20 px 30px 40px; Top, Right, Bottom, Left
+    */
+    /* Si agrego padding, se  suma a la caja, en este caso le suma 10 pixel por lado = da 200px 
+    */
+    
+    padding: 10px 20px 40px 60px;
+    /* border: 10px solid rgb(255, 0, 0); */
+
+    box-sizing: border-box; /* Con este comando el padding no le suma espacio a la caja de contenido*/
+    border-right: 2px dotted red;
+    color:white;
+    margin-left: 200px;
+}

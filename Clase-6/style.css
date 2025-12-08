@@ -1,0 +1,44 @@
+/* 
+Especificidad: Que tan especificos somos a la hora de poner estilos
+Cascada: Dependiendo del orden de nuestro codigo la instruccion podria tener mas precedencia que otra 
+*/
+
+/* Selector universal: ESTO APLICA A TODOS LOS ELEMENTOS */
+*{
+    color:red;
+    font-family: Arial, Helvetica, sans-serif;
+    /* No usar important */
+    /* color: red !important */
+}
+
+
+/* Selector de clase */
+.titulo{
+    color:black;
+    font-weight: 900;
+    font-size: 48px;
+    font-family: serif;
+}
+
+.titulo-gris{
+    color: rgb(88, 88, 88);
+}
+
+/* Selector de elementos */
+h1{
+    color:yellow;
+}
+
+
+
+/* 
+El selector de clase es mas especifico que el selector de elementos
+*/
+
+/* El selector de id  se evita usar ya que puede utilizarse una unica vez y es preferible crear otra clase*/
+#titulo {
+    color:green;
+}
+
+/* El important tiene el comando de que se superponga sobre todos los comandos solo le puede ganar otro important */
+
