@@ -16,6 +16,7 @@
     font-family: "Roboto Condensed", sans-serif;
 }
 
+
 body{
     background-color: white;
 }
@@ -24,12 +25,16 @@ ul,ol{
     list-style: none;
 }
 
+a{
+    text-decoration: none;
+}
+
 .content-container{
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 1356px;
+    max-width: 100%;
+
 }
 
 .header{
@@ -46,6 +51,14 @@ ul,ol{
     fill: var(--color--logo); 
 }
 
+.header nav .header__nav-list{
+    display: flex;
+}
+
 .header__nav-list{
-    align-items: center;
+
+}
+
+.texto-especial{
+    color: white;
 }
