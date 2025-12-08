@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,33 +8,43 @@
 <body>
     <h1>Pagina de contacto</h1>
 
-    <!-- FORM
+    <!-- FORM 
         nombre
         email
         nro_telefono
-        mensaje
+        mensaje 
     -->
-    
     <form>
         <!-- Nombre -->
-         <div>
-            <!-- descripcion de que debe ir en cada campo -->
+        <div>
+            <!-- descripcion de que debe ir en el campo -->
             <!-- 
-            asi se conecta al id del input relacionado
+            For se conecta al id del input relacionado
             -->
-            <label for="">Ingrese el mail</label>
+            <label for="nombre">Ingrese el nombre:</label>
             <input type="text" id="nombre" required>
-         </div>
+        </div>
 
-         <!-- Email -->
-         <div>
+        <!-- Email -->
+        <div>
             <label for="">Ingrese el email</label>
             <input type="email">
+            
+        </div>
 
-         </div>
-   
+        <!-- Color -->
+        <div>
+            <label for="">Ingrese su color favorito</label>
+            <input type="color">
+        </div>
+
+        <div>
+            <label for="">Ingrese el numero de telefono</label>
+            <input type="number">
+        </div>
+        <button type="submit">Enviar</button>
+
     </form>
-        
-    
+
 </body>
 </html>
