@@ -4,9 +4,9 @@
 :root{
     --color--header-0: #000000;
     --color--primario-800: #cc000e;
-    --color--primario-100: #797979;
+    --color--logoasus-100: #797979;
     --color--logo:#f51928;
-    --list--color:#ff4c37;
+    --list--color-850:#ff4c37;
 }
 
 *{
@@ -31,18 +31,30 @@ a{
 
 .content-container{
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     max-width: 100%;
+}
 
+.btn-person{
+    border: none;
+    outline: none;
+}
+
+.icon-person{
+    border: none;
+    background-color: var(--color--header-0);
 }
 
 .header{
     background-color: var(--color--header-0);
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     height: 50px;
+    position: static;
+    
 }
 
 .header__logo-container{
@@ -53,12 +65,34 @@ a{
 
 .header nav .header__nav-list{
     display: flex;
+    justify-content: space-between;
 }
 
-.header__nav-list{
+/* Esto me arreglo el problema .header nav .header */
 
+.header__nav-list{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.header__nav-item{
+    padding: 0px 10px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
 }
 
 .texto-especial{
     color: white;
+}
+
+.texto-especial:hover{
+    color: var(--list--color-850);
+}
+
+.header__actions{
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
 }
